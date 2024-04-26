@@ -1,0 +1,1179 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Violence Detection</title>
+</head>
+<body>
+    <h1>Violence Detection</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var video = $('#video')[0];
+            var src = new EventSource('/video_feed');
+            src.onmessage = function(ev) {
+                var img = new Image();
+                img.onload = function() {
+                    video.srcObject = URL.createObjectURL(new Blob([img.src], {type: 'image/jpeg'}));
+                };
+                img.src = ev.data;
+            };
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.13, a.mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/409209/assets/images/photo-1597954626735-77c9f75707f9.jpeg" type="image/x-icon">
+  <meta name="description" content="Revolutionary violence detection software that uses advanced algorithms to identify and prevent violent behavior. Keep your community safe with our cutting-edge technology.">
+  <title>Revolutionary Violence Detection</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1714125762633">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/bootstrap/css/bootstrap.min.css?rnd=1714125762633">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1714125762633">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1714125762633">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/dropdown/css/style.css?rnd=1714125762633">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/socicon/css/styles.css?rnd=1714125762633">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/theme/css/style.css?rnd=1714125762633">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/409209/assets/css/mbr-additional.css?rnd=1714125762633" type="text/css">
+  
+  
+  
+  
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 8rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 8rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+<!-- <div class="container-banner" id="mobiriseBanner">
+  <div class="banner align-center">
+    <button type="button" onclick="document.getElementById('mobiriseBanner').classList.add('container-banner-closing')" class="btn-close" aria-label="Close" style="position: fixed;top: 16px;right: 16px;"></button>
+    <p class="mbr-text mbr-fonts-style display-7">The site was created with Mobirise Free <a href="https://mobirise.com/" class="mbr-black">Website Builder Software</a></p>
+    <div class="mbr-section-btn">
+      <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com/">Create Your Website!</a>
+      <a class="btn btn-sm btn-secondary display-4" href="https://mobirise.com/p/?u=3199141&st=409209">Remove This Banner</a>
+    </div>
+  </div> -->
+</div>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-ub2MRc6OZG" once="menu" id="menu-5-ub2MRc6OZG">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="/">
+						<img src="https://r.mobirisesite.com/409209/assets/images/photo-1597954626735-77c9f75707f9.jpeg" alt="Mobirise Website Builder" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="/">VioSheild</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="/">Overview</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="/" aria-expanded="false">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="/">Pricing</a>
+					</li>
+				</ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="/">Get Started</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-ub2MRc7SI2 mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/iEAMpJXjJdY?autoplay=1&amp;loop=1&amp;playlist=iEAMpJXjJdY&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-15-ub2MRc7SI2">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong>Detect Violence</strong>
+        </h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Unleash the Power of Cutting-Edge Technology to Detect Violence Like Never Before!</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="/">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="article07 cid-ub2MRc7Ibz" id="about-us-7-ub2MRc7Ibz">
+  
+
+  
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10">
+        <div class="card-wrapper">
+          <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+            <strong>Who We Are</strong>
+          </h3>
+          <div class="row card-box align-left">
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">At ViolenceDetect, we are on a mission to revolutionize the way violence is detected and prevented.</p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Our team of tech wizards and crime-fighting enthusiasts are dedicated to making the world a safer place.</p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Join us in our quest to harness the latest innovations in AI and machine learning for a violence-free future!</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="pricing1 cid-ub2MRc8K0L" id="pricing-cards-1-ub2MRc8K0L">
+    
+    
+    <!-- <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Our Plans</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb active">
+                <div class="item-wrapper">
+                    <div class="item-head">
+                        <h5 class="item-title mbr-fonts-style mb-0 display-5">
+                            <strong>Basic Plan</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+                            <strong>$29</strong>/week
+                        </h6>
+                    </div>
+                    <div class="item-content">
+                        <p class="mbr-text mbr-fonts-style display-7">Get started with essential violence detection features to enhance security and peace of mind.</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer">
+                        <a href="" class="btn item-btn btn-primary display-7">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+                <div class="item-wrapper">
+                    <div class="item-head">
+                        <h5 class="item-title mbr-fonts-style mb-0 display-5">
+                            <strong>Pro Plan</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+                            <strong>$49</strong>/week
+                        </h6>
+                    </div>
+                    <div class="item-content">
+                        <p class="mbr-text mbr-fonts-style display-7">Unlock advanced detection capabilities and real-time alerts for maximum protection.</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer">
+                        <a href="" class="btn item-btn btn-primary display-7">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+                <div class="item-wrapper">
+                    <div class="item-head">
+                        <h5 class="item-title mbr-fonts-style mb-0 display-5">
+                            <strong>Premium Plan</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+                            <strong>$79</strong>/week
+                        </h6>
+                    </div>
+                    <div class="item-content">
+                        <p class="mbr-text mbr-fonts-style display-7">Experience the ultimate in violence detection with 24/7 monitoring and personalized support.</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer">
+                        <a href="" class="btn item-btn btn-primary display-7">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+                <div class="item-wrapper">
+                    <div class="item-head">
+                        <h5 class="item-title mbr-fonts-style mb-0 display-5">
+                            <strong>Custom Plan</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-0 mb-0 display-7">
+                            <strong>Contact Us</strong>/week
+                        </h6>
+                    </div>
+                    <div class="item-content">
+                        <p class="mbr-text mbr-fonts-style display-7">Tailored solutions for large-scale deployments and specialized security needs.</p>
+                    </div>
+                    <div class="mbr-section-btn item-footer">
+                        <a href="" class="btn item-btn btn-primary display-7">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</section>
+
+<section data-bs-version="5.1" class="header12 cid-ub2MRc8Tds" id="call-to-action-8-ub2MRc8Tds">
+    
+
+    
+    
+
+    <div class="text-center container">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-12 col-md-4">
+                <img src="https://r.mobirisesite.com/409209/assets/images/photo-1595211084775-12166cd8222e.jpeg" alt="Mobirise Website Builder">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 content-head">
+                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Stop Violence Now</strong>
+                </h1>
+                <p class="mbr-text mbr-fonts-style mb-4 display-7">Take Action Today to Safeguard Your Community!</p>
+                <div class="mbr-section-btn mt-4">
+                    <a class="btn btn-primary display-7" href="/">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features15 cid-ub2MRc8Xgy" id="features-30-ub2MRc8Xgy">
+    
+
+    
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="item features-without-image col-12 col-lg-4 active">
+                <div class="item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1548715855-9a4ed22bff0d.jpeg" alt="Mobirise Website Builder">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-0 display-7">
+                            <strong>Violence Detector</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-3 display-7">Instantly detects violent behavior with high accuracy</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1562040117-e435cf391aa0.jpeg" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-0 display-7">
+                            <strong>Real-time Alerts</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-3 display-7">Receive immediate notifications on potential threats</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1605806616949-1e87b487fc2f.jpeg" alt="Mobirise Website Builder" data-bs-slide-to="2" data-slide-to="2">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-0 display-7">
+                            <strong>AI-Powered</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-3 display-7">Utilizes advanced artificial intelligence technology for precision</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1662072628030-9b5f2a40216e.jpeg" alt="Mobirise Website Builder" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-0 display-7">
+                            <strong>User-Friendly Interface</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-3 display-7">Intuitive design for easy navigation and monitoring</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1606323518213-ba20fcddec0d.jpeg" alt="Mobirise Website Builder" data-bs-slide-to="4" data-slide-to="4">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-0 display-7">
+                            <strong>Customizable Settings</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-3 display-7">Tailor the software to fit your specific needs</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="img-wrapper">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1520085401243-fa89fc9ff1b7.jpeg" alt="Mobirise Website Builder" data-slide-to="5" data-bs-slide-to="5">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-0 display-7">
+                            <strong>24/7 Support</strong>
+                        </h4>
+                        <h5 class="card-text mbr-fonts-style mt-3 display-7">Dedicated assistance round the clock for any queries</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="news08 cid-ub2MRc98Uw" id="blog-2-ub2MRc98Uw">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Latest Insights on Security</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-lg-3 active">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1669136229979-102bef519e4e.jpeg" alt="Mobirise Website Builder" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style mt-0 mb-3 display-7">Safety</h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-5">
+                            <strong>Top 10 Tips for Personal Safety</strong>
+                        </h6>
+                        
+                        <div class="mbr-section-btn item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1557081998-10deac8b352e.jpeg" alt="Mobirise Website Builder">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style mb-3 mt-0 display-7">Technology</h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-5">
+                            <strong>The Future of Security Tech</strong>
+                        </h6>
+                        
+                        <div class="mbr-section-btn item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1639731363764-10ddc5909930.jpeg" alt="Mobirise Website Builder">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style mb-3 mt-0 display-7">Innovation</h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Revolutionizing Security Measures</strong>
+                        </h6>
+                        
+                        <div class="mbr-section-btn item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1590719372066-06dc033fba33.jpeg" alt="Mobirise Website Builder">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style mb-3 mt-0 display-7">Trends</h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Emerging Security Trends</strong>
+                        </h6>
+                        
+                        <div class="mbr-section-btn item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features023 cid-ub2MRc95XZ" id="metrics-1-ub2MRc95XZ">
+
+    
+
+    
+    
+    <div class="container">
+        
+        <div class="row content-row justify-content-center">
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-2 mb-md-3">
+                        <span class="num mbr-fonts-style display-1">
+                            <strong>97.6%</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Detection Accuracy</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-2 mb-md-3">
+                        <span class="num mbr-fonts-style display-1">
+                            <strong>24/7</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Monitoring Service</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="title mb-2 mb-md-3">
+                        <span class="num mbr-fonts-style display-1">
+                            <strong>10K+</strong></span>
+                    </div>
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        <strong>Happy Users</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article12 cid-ub2MRc9qPh" id="generic-text-12-ub2MRc9qPh">    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-2">
+                <strong>Unleash Your Safety Potential</strong>
+                </h3>
+                
+                <p class="mbr-text mbr-fonts-style display-7">Welcome to the cutting-edge world of Violence Detector Software, where safety meets innovation in the most thrilling way possible.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Our AI-powered solution ensures that you stay steps ahead of any potential threats, providing you with real-time alerts and unmatched accuracy in detecting violent behavior.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Join over 100,000 satisfied users who have experienced the power of our software, and take control of your safety like never before.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery1 mbr-gallery cid-ub2MRcadNJ" id="gallery-10-ub2MRcadNJ">
+    
+    
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-2">
+                        <strong>Explore Our Technology Showcase</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mbr-gallery">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1662072633701-42ee7cc1d0d2.jpeg" alt="Mobirise Website Builder" data-slide-to="0">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1653586428609-51ee30c0a6b9.jpeg" alt="Mobirise Website Builder" data-slide-to="1">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1606323516801-54354ac53b16.jpeg" alt="Mobirise Website Builder" data-slide-to="2">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1676630656246-3047520adfdf.jpeg" alt="Mobirise Website Builder" data-slide-to="3">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1710181717510-8e3896937fbd.jpeg" alt="Mobirise Website Builder" data-slide-to="4">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1624381565977-e5d4188e4b04.jpeg" alt="Mobirise Website Builder" data-slide-to="5">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1658597609767-bfdbca76a492.jpeg" alt="Mobirise Website Builder" data-slide-to="6">
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper mb-3">
+                    <img class="w-100" src="https://r.mobirisesite.com/409209/assets/images/photo-1592013079736-2408be506279.jpeg" alt="Mobirise Website Builder" data-slide-to="7">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="people05 cid-ub2MRcazOS" id="testimonials-6-ub2MRcazOS">
+	
+
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Mind-Blowing</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">This software changed the game for us! No more violence slips through unnoticed.</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/409209/assets/images/photo-1581803118522-7b72a50f7e9f.jpeg" alt="" data-slide-to="0" data-bs-slide-to="0">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Divyanshi</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Unbelievable accuracy and speed. It's like having a superhero on our team!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/409209/assets/images/photo-1536763225213-b5592b525630.jpeg" data-slide-to="1" data-bs-slide-to="1" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Ayush</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Revolutionary technology that keeps us safe. A must-have for every organization!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/409209/assets/images/photo-1586185018558-ea8f4b4c514f.jpeg" data-slide-to="2" data-bs-slide-to="2" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Sanya</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="people03 cid-ub2MRcb5Fo" id="team-1-ub2MRcb5Fo">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Meet Us</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1599566150163-29194dcaad36.jpeg" alt="Mobirise Website Builder" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Udit</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Chief Innovation Officer</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1591714098656-94a8a95dcf50.jpeg" alt="Mobirise Website Builder" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Suhani</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Lead Developer</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1489980791458-937dcbaf1d5b.jpeg" alt="Mobirise Website Builder" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Archit</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Data Scientist</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                       <img src="https://r.mobirisesite.com/409209/assets/images/photo-1567468219153-4b1dea5227ea.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Purva</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">UX Designer</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-ub2MRcbXsW mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/r12LaIASJRQ?autoplay=1&amp;loop=1&amp;playlist=r12LaIASJRQ&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="video-5-ub2MRcbXsW">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="list1 cid-ub2MRcbKJE" id="faq-1-ub2MRcbKJE">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-10 m-auto">
+                <div class="content">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-12 content-head">
+                            <div class="mbr-section-head">
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                                    <strong>Got Questions? We Have Answers!</strong>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bootstrap-accordion_13" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_13" aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">How does it work?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Our software uses advanced algorithms to detect violent behavior in real-time, ensuring quick intervention.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_13" aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Is it accurate?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse2_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Absolutely! Our system has been tested rigorously and boasts an impressive accuracy rate of over 95%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_13" aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Can it be customized?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Yes, we offer customization options to tailor the software to your specific needs and environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_13" aria-expanded="false" aria-controls="collapse4">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Is it easy to use?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse4_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Intuitive and user-friendly, our interface makes monitoring and managing the software a breeze.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_13" aria-expanded="false" aria-controls="collapse5">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">What support do you offer?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse5_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Our dedicated support team is available 24/7 to assist you with any queries or issues you may have.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social4 cid-ub2MRcbVmS" id="follow-us-1-ub2MRcbVmS">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Stay Connected</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="/">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="/" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="/" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="/" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="clients04 cid-ub2MRccBKa" id="partners-1-ub2MRccBKa">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Tech Titans</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2 active">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1502828331539-51c709e80300.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="1" data-bs-slide-to="1">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1651044450619-5ce74d316987.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1617727553252-65863c156eb0.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1529612700005-e35377bf1415.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="4" data-bs-slide-to="4">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1651853082689-706323a31427.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="5" data-bs-slide-to="5">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/409209/assets/images/photo-1596622723231-b20320c7346b.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="6" data-bs-slide-to="6">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-ub2MRccwM3" id="contact-form-3-ub2MRccwM3">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Get in Touch</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="P+oBp+7aA5WUvI3i+Enl5unWB+3XenmkjvhF+z+FDgue0m/IGeXHjhHYeSJXnhzQGrm0qaiVzW2En/4+poXdb+PXj/kwsoybTFClpHB0CHuL6LDAOAXycH1oNVVkBf4D">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-3-ub2MRccwM3">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-3-ub2MRccwM3">
+                        </div>
+                        <div class="col-12 form-group mb-3 mb-3" data-for="url">
+                            <input type="url" name="url" placeholder="Phone" data-form-field="url" class="form-control" value="" id="url-contact-form-3-ub2MRccwM3">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-contact-form-3-ub2MRccwM3"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts02 map1 cid-ub2MRcc0uL" id="contacts-2-ub2MRcc0uL">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Contact Us</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-6">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        
+                        <ul class="list mbr-fonts-style display-7">
+                            <li class="mbr-text item-wrap">
+                            Phone:                                
+                            <a href="tel:+1-800-555-DETECT" class="text-black">0669696969</a></li>
+
+                            <li class="mbr-text item-wrap">WhatsApp: 
+                            <a href="tel:+1-800-555-DETECT" class="text-black">0669696969</a></li> 
+
+                            <li class="mbr-text item-wrap">                            
+                            Email:
+                            <a href="mailto:contact@violencedetector.com" class="text-black">contact@vioshield.com</a>                        
+                            </li>
+
+                            <li class="mbr-text item-wrap">                        
+                            Address:
+                            Bharati Vidyapeeth, New Delhi
+                            </li>
+
+                            <li class="mbr-text item-wrap">
+                            Working Hours:
+                            Mon-Fri: 9am-6pm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper col-md-12 col-lg-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-ub2MRccpXt" once="footers" id="footer-6-ub2MRccpXt">
+
+        
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="row-links">
+                <ul class="header-menu">
+                  
+                  
+                  
+                  
+                <li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Home</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">About</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Services</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Contact</a>
+                  </li></ul>
+              </div>
+
+            
+            <div class="col-12 mt-4">
+                <p class="mbr-fonts-style copyright display-7">© 2024 Violence Detector Software. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/409209/assets/web/assets/jquery/jquery.min.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/smoothscroll/smooth-scroll.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/ytplayer/index.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/dropdown/js/navbar-dropdown.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/vimeoplayer/player.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/mbr-switch-arrow/mbr-switch-arrow.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/theme/js/script.js?rnd=1714125762634"></script>
+  <script src="https://r.mobirisesite.com/409209/assets/formoid/formoid.min.js?rnd=1714125762634"></script>
+  
+  
+  
+</body>
+</html>
